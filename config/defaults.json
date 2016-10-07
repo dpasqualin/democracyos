@@ -1,19 +1,20 @@
 {
-  "locale": "en",
+  "locale": "pt",
   "protocol": "http",
   "warnHTTP": true,
   "host": "localhost",
   "publicPort": 3000,
-  "mongoUrl": "mongodb://localhost/DemocracyOS-dev",
+  "mongoUrl": "mongodb://localhost/DemocracyOS",
   "mongoUsersUrl": "",
-  "jwtSecret": "Generate a secret token and paste it here.",
+  "jwtSecret": "ZjBhODJmNzJmMmZiODlkMjk1MTdhNzM2ZjBhODJmNzJmMmZiODlkMjk1MTdhNzM2",
   "corsDomains": [],
   "signinUrl": "",
   "signupUrl": "",
   "settingsUrl": "",
-  "staff": [],
+  "staff": ["dpasqualin@gmail.com"],
   "allowEmailAliases": true,
-  "facebookSignin": false,
+  "facebookSignin": true,
+  "googleSignin": true,
   "publicEmails": false,
   "auth": {
     "basic": {
@@ -21,9 +22,14 @@
       "password": ""
     },
     "facebook": {
-      "clientID": "",
-      "clientSecret": "",
+      "clientID": "236751753344732",
+      "clientSecret": "0e6cd576e54ec9ae28532211c1dad606",
       "permissions": [ "email" ]
+    },
+    "google": {
+      "clientID": "75109900093-2dkcmmat967spd774a0nlss57thg31ud.apps.googleusercontent.com",
+      "clientSecret": "2NHgXpGxdGIrEpND6ILn5P2O",
+      "permissions": [ "profile", "email" ]
     }
   },
   "https": {
@@ -74,6 +80,7 @@
     "headerBackgroundColor",
     "headerFontColor",
     "facebookSignin",
+    "googleSignin",
     "visibility",
     "usersWhitelist",
     "multiForum",
